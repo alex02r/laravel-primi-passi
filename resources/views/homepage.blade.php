@@ -8,9 +8,17 @@
 </head>
 <body>
     <div class="container my-5">
-        <div class="row">
+        <div class="row jusify-content-center">
             <div class="col-12 text-center">
                 <h1>Hello World!</h1>
+            </div>
+            <div class="col-8">
+                <h5>Lista:</h5>
+                <ul class="list-unstyled">
+                    @foreach ($list as $item)
+                        <li>{{ $item }}</li>
+                    @endforeach
+                </ul>
             </div>
         </div>
     </div>
