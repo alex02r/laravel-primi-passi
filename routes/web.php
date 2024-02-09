@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    $list = ['home', 'img', 'about'];
+    return view('homepage', compact('list'));
 });
